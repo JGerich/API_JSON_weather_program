@@ -10,7 +10,7 @@ class City:
     
     def get_data(self):
         try:
-            response = requests.get(f"https://api.openweathermap.org/data/2.5/weather?units={self.units}&lat={self.lat}&lon={self.lon}&appid=dbde96c32cbcfb2ca75953af363713f6")
+            response = requests.get(f"https://api.openweathermap.org/data/2.5/weather?units={self.units}&lat={self.lat}&lon={self.lon}&appid={API_KEY}")  ## enter your API key in place of: {API_KEY} ##
 
         except:
             print("An error occurred.Check your internet connection.")
